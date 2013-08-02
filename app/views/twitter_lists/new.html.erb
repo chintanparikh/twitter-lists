@@ -1,0 +1,7 @@
+<%= form_tag twitter_lists_path, method: "post" do %>
+  <%= label_tag(:handle, "@") %>
+  <%= text_field_tag(:handle) %>
+  <%= label_tag(:password, "Password") %>
+  <%= password_field_tag(:password) %>
+  <%= submit_tag("Add yourself to the list") %>
+ <% end %>

@@ -1,5 +1,7 @@
 TwitterLists::Application.routes.draw do
   root to: "twitter_lists#new"
+
+  resources :twitter_lists, only: [:new, :create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
